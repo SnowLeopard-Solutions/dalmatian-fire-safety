@@ -164,10 +164,10 @@ p { margin: 0 0 1em; }
 }
 .mark-text-sm {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 400;
   fill: var(--slate);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
 }
 
 /* ---------- Buttons ---------- */
