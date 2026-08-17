@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Dalmatian Fire Safety</title>
+<meta name="description" content="Get in touch to book a fire risk assessment in London.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@600;700&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="index.html" class="wordmark">Dalmatian<span class="wordmark-sub">Fire Safety</span></a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="articles.html">Articles</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-header">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h1>Get in touch</h1>
+      <p class="lede">Tell me a bit about the building and what you need, and I'll come back to you directly.</p>
+    </div>
+  </section>
+
+  <section class="wrap contact-grid">
+
+    <div class="contact-info">
+      <dl>
+        <dt>Email</dt>
+        <dd><a href="mailto:PLACEHOLDER@example.com">PLACEHOLDER@example.com</a></dd>
+        <dt>Phone</dt>
+        <dd>PLACEHOLDER PHONE NUMBER</dd>
+        <dt>Coverage</dt>
+        <dd>London</dd>
+        <dt>Response time</dt>
+        <dd>Usually within one working day</dd>
+      </dl>
+    </div>
+
+    <div class="contact-form">
+      <!--
+        FORM SETUP — read before publishing:
+        1. Sign up at https://formspree.io (free tier is fine for this volume).
+        2. Create a new form, get your form ID (looks like "mzzabcde").
+        3. Replace YOUR_FORM_ID below in the action="" attribute.
+        4. Formspree will ask you to confirm your email address the first time a
+           real submission comes in — check your inbox after testing.
+      -->
+      <form class="enquiry" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div>
+          <label for="building-type">Building type</label>
+          <select id="building-type" name="building_type">
+            <option value="">Select one</option>
+            <option value="Purpose-built block of flats">Purpose-built block of flats</option>
+            <option value="Converted house">Converted house</option>
+            <option value="Residential care setting">Residential care setting</option>
+            <option value="Commercial - office">Commercial — office</option>
+            <option value="Commercial - shop">Commercial — shop</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">What do you need?</label>
+          <textarea id="message" name="message" required placeholder="A few lines about the building and what prompted the enquiry"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send enquiry</button>
+      </form>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Dalmatian Fire Safety — London</p>
+    <nav aria-label="Footer">
+      <a href="services.html">Services</a>
+      <a href="articles.html">Articles</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
