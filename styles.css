@@ -234,6 +234,19 @@ p { margin: 0 0 1em; }
   grid-template-columns: 1.4fr 1fr;
   gap: 48px;
 }
+.credential-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.credential-heading h2 { margin: 0; }
+.ifsm-logo {
+  height: 64px;
+  width: auto;
+  flex-shrink: 0;
+}
 .cred-suffix {
   font-family: var(--font-mono);
   font-weight: 500;
@@ -503,6 +516,7 @@ form.enquiry .btn-primary {
   .who-grid { grid-template-columns: 1fr; }
   .service-block { grid-template-columns: 1fr; gap: 12px; }
   .article-item { grid-template-columns: 1fr; gap: 6px; }
+  .ifsm-logo { height: 52px; margin-top: 4px; }
 
   /* Header: stack logo/wordmark above nav, give both room */
   .header-row {
