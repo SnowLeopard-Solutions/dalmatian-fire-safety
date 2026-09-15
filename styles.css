@@ -80,10 +80,9 @@ p { margin: 0 0 1em; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
-
 .wordmark {
   font-family: var(--font-display);
   font-weight: 700;
@@ -91,8 +90,19 @@ p { margin: 0 0 1em; }
   text-decoration: none;
   color: var(--ink);
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 12px;
   line-height: 1.1;
+}
+.wordmark-logo {
+  height: 2.7em;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
+.wordmark-text {
+  display: flex;
+  flex-direction: column;
 }
 .wordmark-sub {
   font-family: var(--font-body);
@@ -103,7 +113,6 @@ p { margin: 0 0 1em; }
   color: var(--red);
   margin-top: 2px;
 }
-
 .site-nav {
   display: flex;
   gap: 28px;
@@ -270,6 +279,29 @@ p { margin: 0 0 1em; }
 }
 .preview-card h3 { margin-bottom: 10px; }
 .preview-card p { margin: 0; color: var(--slate); font-size: 0.94rem; }
+
+/* Who this helps */
+.who-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.who-card {
+  background: var(--paper);
+  padding: 28px;
+}
+.who-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--red-ink);
+  margin-bottom: 10px;
+}
+.who-card h3 { margin-bottom: 10px; font-size: 1.05rem; }
+.who-card p:not(.who-tag) { margin: 0; color: var(--slate); font-size: 0.9rem; }
 
 /* Why */
 .why-grid {
@@ -458,16 +490,22 @@ form.enquiry .btn-primary {
 }
 
 /* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .who-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 860px) {
   .hero-grid, .credentials-grid, .why-grid, .contact-grid {
     grid-template-columns: 1fr;
   }
   .hero-mark { max-width: 260px; }
   .preview-grid { grid-template-columns: 1fr; }
+  .who-grid { grid-template-columns: 1fr; }
   .service-block { grid-template-columns: 1fr; gap: 12px; }
   .article-item { grid-template-columns: 1fr; gap: 6px; }
   .site-nav { gap: 16px; }
   .wordmark-sub { display: none; }
+  .wordmark-logo { height: 2.1em; }
 }
 
 @media (prefers-reduced-motion: reduce) {
