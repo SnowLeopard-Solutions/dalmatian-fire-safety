@@ -115,6 +115,7 @@ p { margin: 0 0 1em; }
 }
 .site-nav {
   display: flex;
+  align-items: center;
   gap: 28px;
 }
 .site-nav a {
@@ -129,6 +130,23 @@ p { margin: 0 0 1em; }
 .site-nav a[aria-current="page"] {
   color: var(--ink);
   border-bottom-color: var(--red);
+}
+.site-nav a.nav-cta {
+  color: var(--paper);
+  background: var(--ink);
+  padding: 9px 18px;
+  border-radius: 2px;
+  border-bottom: none;
+  font-weight: 600;
+}
+.site-nav a.nav-cta:hover {
+  background: var(--red-ink);
+  color: var(--paper);
+}
+.site-nav a.nav-cta[aria-current="page"] {
+  background: var(--red-ink);
+  color: var(--paper);
+  border-bottom: none;
 }
 
 /* ---------- Hero ---------- */
@@ -460,6 +478,24 @@ p { margin: 0 0 1em; }
   color: var(--slate);
   line-height: 1.6;
 }
+.article-cta {
+  margin-top: 32px;
+  padding: 24px 28px;
+  background: var(--paper-shade);
+  border-left: 3px solid var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.article-cta p {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
 .back-link {
   display: inline-block;
   margin-bottom: 24px;
@@ -570,6 +606,9 @@ form.enquiry .btn-primary {
   .site-nav a {
     font-size: 1rem;
     padding: 8px 4px;
+  }
+  .site-nav a.nav-cta {
+    padding: 10px 20px;
   }
 }
 
