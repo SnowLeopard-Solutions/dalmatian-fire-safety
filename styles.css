@@ -569,6 +569,11 @@ form.enquiry .btn-primary {
   .wordmark-logo { height: 2.8em; }
   .site-nav { gap: 14px 18px; }
   .site-nav a { font-size: 0.95rem; }
+  .wrap { padding: 0 28px; }
+  .article-body h1 { font-size: 1.85rem; }
+  form.enquiry input,
+  form.enquiry select,
+  form.enquiry textarea { padding: 10px 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
