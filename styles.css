@@ -452,6 +452,14 @@ p { margin: 0 0 1em; }
   color: var(--slate);
   margin-bottom: 8px;
 }
+.article-disclaimer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  color: var(--slate);
+  line-height: 1.6;
+}
 .back-link {
   display: inline-block;
   margin-bottom: 24px;
