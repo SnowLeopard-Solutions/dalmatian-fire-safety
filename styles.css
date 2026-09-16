@@ -428,6 +428,24 @@ p { margin: 0 0 1em; }
 .article-body h2 { margin-top: 2em; }
 .article-body p { color: var(--ink); }
 .article-body ul, .article-body ol { color: var(--ink); padding-left: 22px; }
+.article-figure {
+  margin: 24px 0 28px;
+  border: 1px solid var(--line);
+  background: var(--paper-shade);
+}
+.article-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid var(--line);
+}
+.article-figure figcaption {
+  padding: 14px 18px;
+  font-size: 0.88rem;
+  color: var(--slate);
+  font-family: var(--font-mono);
+  line-height: 1.5;
+}
 .article-meta {
   font-family: var(--font-mono);
   font-size: 0.8rem;
