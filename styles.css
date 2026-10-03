@@ -320,7 +320,13 @@ p { margin: 0 0 1em; }
 .who-card {
   background: var(--paper);
   padding: 28px;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s ease;
 }
+.who-card:hover { background: var(--paper-shade); }
+.who-card:hover h3 { color: var(--red-ink); }
 .who-tag {
   font-family: var(--font-mono);
   font-size: 0.75rem;

@@ -16,6 +16,26 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://dalmatianfiresafety.co.uk/sectors/commercial-premises.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dalmatianfiresafety.co.uk/sectors/hmo-landlords.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dalmatianfiresafety.co.uk/sectors/blocks-of-flats-managing-agents.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dalmatianfiresafety.co.uk/sectors/care-homes-specialist-settings.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://dalmatianfiresafety.co.uk/articles.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -37,6 +57,11 @@
   </url>
   <url>
     <loc>https://dalmatianfiresafety.co.uk/articles/fire-risk-assessment-pricing.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dalmatianfiresafety.co.uk/articles/fire-alarm-documentation.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
