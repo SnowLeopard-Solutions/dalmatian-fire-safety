@@ -715,42 +715,59 @@ form.enquiry .btn-primary {
   .ifsm-logo { height: 52px; margin-top: 4px; }
   .pricing-teaser { padding: 22px 22px; }
 
-  /* Header: stack logo/wordmark above nav, give both room */
+  /* Header (mobile): compact sticky bar. Logo and name in one row, nav in one row beneath. */
   .header-row {
     flex-direction: column;
     align-items: center;
-    gap: 16px;
-    padding-top: 20px;
-    padding-bottom: 16px;
+    gap: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .wordmark {
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
+    flex-direction: row;
+    gap: 10px;
+    text-align: left;
+    font-size: 1.05rem;
   }
   .wordmark-text {
-    align-items: center;
+    align-items: flex-start;
   }
-  .wordmark-logo { height: 3.2em; }
-  .wordmark-sub { display: block; font-size: 0.68rem; }
+  .wordmark-logo { height: 2.4em; }
+  .wordmark-sub { display: block; font-size: 0.6rem; }
   .site-nav {
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 16px;
+    flex-wrap: nowrap;
     justify-content: center;
+    width: 100%;
   }
   .site-nav a {
-    font-size: 1rem;
-    padding: 8px 4px;
+    font-size: 0.9rem;
+    padding: 6px 0;
   }
   .site-nav a.nav-cta {
-    padding: 10px 20px;
+    padding: 6px 12px;
   }
+
+  /* Footer (mobile): name on top, links in two tidy columns */
+  .footer-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .footer-row nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 24px;
+    width: 100%;
+  }
+  .footer-row nav a { padding: 6px 0; }
 }
 
 @media (max-width: 480px) {
-  .wordmark-logo { height: 2.8em; }
-  .site-nav { gap: 14px 18px; }
-  .site-nav a { font-size: 0.95rem; }
+  .wordmark-logo { height: 2.4em; }
+  .site-nav { gap: 12px; }
+  .site-nav a { font-size: 0.85rem; }
+  .site-nav a.nav-cta { padding: 6px 10px; }
   .wrap { padding: 0 28px; }
   .article-body h1 { font-size: 1.85rem; }
   form.enquiry input,
