@@ -768,7 +768,7 @@ form.enquiry .btn-primary {
   .site-nav { gap: 12px; }
   .site-nav a { font-size: 0.85rem; }
   .site-nav a.nav-cta { padding: 6px 10px; }
-  .wrap { padding: 0 28px; }
+  .wrap { padding-left: 28px; padding-right: 28px; }
   .article-body h1 { font-size: 1.85rem; }
   form.enquiry input,
   form.enquiry select,
