@@ -811,3 +811,11 @@ form.enquiry .btn-primary {
 .whatsapp-btn:hover { border-color: var(--ink); border-left-color: #25D366; }
 .whatsapp-btn-title { display: block; font-weight: 600; }
 .whatsapp-btn-sub { display: block; font-size: 0.9rem; margin-top: 2px; }
+
+/* ---------- Privacy note ---------- */
+.privacy-note {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 14px 0 0;
+  color: var(--slate);
+}
