@@ -819,3 +819,41 @@ form.enquiry .btn-primary {
   margin: 14px 0 0;
   color: var(--slate);
 }
+
+/* ---------- Resources page (unlisted) ---------- */
+.resource-card {
+  margin: 28px 0;
+  padding: 20px 24px;
+  background: var(--paper-shade);
+  border-left: 3px solid var(--red);
+}
+.resource-card h2 { margin-bottom: 0.3em; font-size: 1.25rem; }
+.resource-card p { margin: 0 0 14px; }
+.resource-meta {
+  font-size: 0.85rem;
+  color: var(--slate);
+}
+.share-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+.share-label { font-weight: 600; color: var(--slate); }
+.share-row a, .share-row button {
+  font: inherit;
+  font-weight: 600;
+  color: var(--ink);
+  background: none;
+  border: 0;
+  border-bottom: 2px solid var(--line-strong);
+  padding: 0 0 1px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.share-row a:hover, .share-row button:hover { border-bottom-color: var(--red); }
+.share-native[hidden] { display: none; }
