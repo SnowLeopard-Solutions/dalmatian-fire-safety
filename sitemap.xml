@@ -90,4 +90,9 @@
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
+  <url>
+    <loc>https://dalmatianfiresafety.co.uk/articles/kitchen-extract-cleaning-how-often.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
