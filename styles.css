@@ -500,6 +500,7 @@ p { margin: 0 0 1em; }
   display: block;
   border-bottom: 1px solid var(--line);
 }
+.article-figure img:last-child { border-bottom: 0; }
 .article-figure figcaption {
   padding: 14px 18px;
   font-size: 0.88rem;
