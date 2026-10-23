@@ -538,6 +538,17 @@ p { margin: 0 0 1em; }
 .article-sources a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
 .article-sources a:hover { color: var(--ink); }
 .article-body sup a { text-decoration: none; color: var(--red); font-family: var(--font-mono); font-size: 0.8em; }
+/* Timeline (law timeline article) */
+.article-body .timeline { list-style: none; margin: 32px 0 0; padding: 0; border-left: 1px solid var(--line-strong); }
+.timeline-item { position: relative; display: grid; grid-template-columns: 170px 1fr; gap: 24px; padding: 0 0 32px 28px; }
+.timeline-item:last-child { padding-bottom: 8px; }
+.timeline-item::before { content: ""; position: absolute; left: -5px; top: 7px; width: 9px; height: 9px; background: var(--red); }
+.article-body .timeline-date { margin: 3px 0 0; font-family: var(--font-mono); font-size: 0.82rem; color: var(--red-ink); }
+.timeline-body h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.article-body .timeline-body p { margin: 0 0 8px; }
+.article-body .timeline-change { font-size: 0.95rem; color: var(--slate); }
+.timeline-change a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+@media (max-width: 640px) { .timeline-item { grid-template-columns: 1fr; gap: 4px; padding-left: 22px; } }
 .article-disclaimer {
   margin-top: 40px;
   padding-top: 20px;

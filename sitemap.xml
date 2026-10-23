@@ -71,6 +71,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://dalmatianfiresafety.co.uk/articles/fire-safety-law-timeline.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://dalmatianfiresafety.co.uk/contact.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
