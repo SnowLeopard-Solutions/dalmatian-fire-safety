@@ -882,3 +882,13 @@ form.enquiry .btn-primary {
 }
 .share-row a:hover, .share-row button:hover { border-bottom-color: var(--red); }
 .share-native[hidden] { display: none; }
+
+/* Reference tables (assessor reference page) */
+.table-wrap { overflow-x: auto; margin: 16px 0 8px; }
+.ref-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+.ref-table caption { text-align: left; font-weight: 600; padding: 0 0 8px; }
+.ref-table th, .ref-table td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.ref-table th { font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--slate); border-bottom: 1px solid var(--line-strong); }
+.ref-table td.num, .ref-table th.num { font-family: var(--font-mono); }
+.ref-table td:first-child { min-width: 180px; }
+.ref-note { font-size: 0.92rem; color: var(--slate); margin: 6px 0 0; }
